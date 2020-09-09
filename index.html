@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      canvas {
+        border: 1px solid white;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      button {
+        width: 150px;
+        color: rgb(85, 85, 85);
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: darkorange;
+        outline: none;
+        margin-bottom: 15px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 id="score">Score: 0</h2>
+    </div>
+    <div class="game-over">
+      <button id="play-again">Play Again</button>
+    </div>
+    <canvas id="canvas" width="800" height="390"></canvas>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
